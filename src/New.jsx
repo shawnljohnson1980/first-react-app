@@ -1,6 +1,10 @@
+import MyNewComponent from "./components/MyNewComonent";
+import PersonCard from "./components/PersonCard";
+
 function New() {
   return (
     <>
+      <PersonCard />
       <h1>This is some really cool stuff </h1>
       <ul>
         <li>Add form</li>
@@ -15,7 +19,7 @@ function New() {
         <form-group mt-3>
           <label htmlFor="date">Date:</label>
           <input
-            class="shadow border border-raounded border-dark mt-3"
+            class="shadow border border-rounded border-white"
             type="date"
             name="date"
             id=""
@@ -26,7 +30,7 @@ function New() {
         <form-group>
           <label htmlFor="Name">Name:</label>
           <input
-            class="shadow border border-raounded mt-3 border-dark "
+            class="shadow border border-rounded border-white "
             type="text"
             name="name"
             id=""
@@ -56,6 +60,9 @@ function New() {
         </tbody>
       </table>
       <br></br>
+      <div className="App">
+        <MyNewComponent />
+      </div>
     </>
   );
 }

@@ -5,7 +5,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(./hardrock.jpg);
 }
 
 code {
@@ -13,19 +12,51 @@ code {
     monospace;
 }
 table {
+  background-color: rgba(3, 1, 1, 0.26);
   margin: 0 auto;
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 80%;
+  color: white;
 }
 
 td,
 th {
-  border: 1px solid #dddddd;
+  border: 1px solid rgba(3, 1, 1, 0.26);
   text-align: left;
   padding: 8px;
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color: rgba(3, 1, 1, 0.26);
+}
+input.shadow.border.border-rounded.border-white {
+  background-color: rgba(3, 1, 1, 0.26);
+  margin: 5px;
+  color: white;
+  text-emphasis-color: #660e40;
+}
+form {
+  margin-right: 900px;
+  background-color: rgba(3, 1, 1, 0.26);
+}
+ul {
+  margin-right: 900px;
+}
+h1 {
+  margin-right: 900px;
+}
+.col {
+  flex: 1 0 0%;
+  color: white;
+  width: 400px;
+  height: 175px;
+  border: solid rgba(245, 242, 242, 0.281) 0.25px;
+  background-color: rgba(3, 1, 1, 0.26);
+}
+p {
+  margin-top: 25px;
+}
+h3 {
+  color: #dbe1ea;
 }
