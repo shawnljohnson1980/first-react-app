@@ -1,6 +1,6 @@
 import MyNewComponent from "./components/MyNewComonent";
 import PersonCard from "./components/PersonCard";
-
+import Age from "./components/Age.jsx";
 function New() {
   return (
     <>
@@ -10,42 +10,12 @@ function New() {
         <li>Add form</li>
         <li>Add Table</li>
         <li>Add image</li>
+        <li>Add age counter</li>
       </ul>
-      <form
-        class="border border-rounded border-white shadow p-4"
-        action=""
-        method="post"
-      >
-        <form-group mt-3>
-          <label htmlFor="date">Date:</label>
-          <input
-            class="shadow border border-rounded border-white"
-            type="date"
-            name="date"
-            id=""
-            placeholder="datetime=today"
-          />
-        </form-group>
-        <br></br>
-        <form-group>
-          <label htmlFor="Name">Name:</label>
-          <input
-            class="shadow border border-rounded border-white "
-            type="text"
-            name="name"
-            id=""
-            placeholder="Your full name"
-          />
-        </form-group>
-        <br></br>
-        <form-group>
-          <input
-            class="shadow border border-rounded border-white btn btn-primary mt-3 mb-4"
-            type="button"
-            value="Create"
-          />
-        </form-group>
-      </form>
+      <div className="Age">
+        <Age></Age>
+      </div>
+      <form></form>
       <br></br>
       <table class="table-striped border border-rounded ">
         <thead>
