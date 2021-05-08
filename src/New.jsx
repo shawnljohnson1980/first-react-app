@@ -4,7 +4,6 @@ import Age from "./components/Age.jsx";
 function New() {
   return (
     <>
-      <PersonCard />
       <h1>This is some really cool stuff </h1>
       <ul>
         <li>Add form</li>
@@ -17,18 +16,11 @@ function New() {
       </div>
       <form></form>
       <br></br>
-      <table class="table-striped border border-rounded ">
-        <thead>
-          <th class="border boder-rounded border-white">Head 1</th>
-          <th class="border boder-rounded border-white">Head 2</th>
-          <th class="border boder-rounded border-white">head 3</th>
-        </thead>
-        <tbody>
-          <td class="border boder-rounded border-white">Data 1</td>
-          <td class="border boder-rounded border-white"> Data 2</td>
-          <td class="border boder-rounded border-white">Data 3</td>
-        </tbody>
-      </table>
+        <PersonCard
+         firstName="Shawn"
+         lastName="Johnson"
+         age="40"
+         hairColor="bald"/>
       <br></br>
       <div className="App">
         <MyNewComponent />

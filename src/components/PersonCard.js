@@ -1,19 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class PersonCard extends Component {
-
-    render() {
-        const { firstName = "Shawn", lastName = "Johnson", age = 40, hairColor = "bald" } = this.props;
-        return (
-            <div class="header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col2"> <h3>Hi My Name is {firstName}  {lastName}.  I am {age}  years old,  and my hair color is  {hairColor}.. </h3>
-                        </div>
+const PersonCard = props => {
+    return (
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col2">
+                        <table>
+                            <thead>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Age</th>
+                                <th>Hair Color</th>
+                            </thead>
+                            <tbody>
+                                <td>{props.firstName}</td>
+                                <td>{props.lastName}</td>
+                                <td> {props.age}</td>
+                                <td> {props.hairColor}</td>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
+
 export default PersonCard
